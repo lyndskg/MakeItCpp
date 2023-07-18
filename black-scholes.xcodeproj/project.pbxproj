@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6B68CFF2A5F0D4D00B02621 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B68CFE2A5F0D4D00B02621 /* main.cpp */; };
+		B6B68CFF2A5F0D4D00B02621 /* blackscholes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B68CFE2A5F0D4D00B02621 /* blackscholes.cpp */; };
+		B6B68D092A5F11D800B02621 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B68D072A5F11D800B02621 /* utilities.cpp */; };
+		B6B68D0F2A660E1A00B02621 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B68D0D2A660E1A00B02621 /* main.cpp */; };
+		B6B68D122A66713900B02621 /* inputReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B68D112A66713900B02621 /* inputReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		B6B68CFB2A5F0D4D00B02621 /* black-scholes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "black-scholes"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6B68CFE2A5F0D4D00B02621 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6B68CFE2A5F0D4D00B02621 /* blackscholes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = blackscholes.cpp; sourceTree = "<group>"; };
+		B6B68D052A5F0DA100B02621 /* blackscholes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blackscholes.h; sourceTree = "<group>"; };
+		B6B68D062A5F0FF000B02621 /* xcode_redirect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xcode_redirect.hpp; sourceTree = "<group>"; };
+		B6B68D072A5F11D800B02621 /* utilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cpp; sourceTree = "<group>"; };
+		B6B68D082A5F11D800B02621 /* utilities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utilities.hpp; sourceTree = "<group>"; };
+		B6B68D0D2A660E1A00B02621 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6B68D102A6641BB00B02621 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B6B68D112A66713900B02621 /* inputReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputReader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +51,14 @@
 		B6B68CF22A5F0D4D00B02621 = {
 			isa = PBXGroup;
 			children = (
-				B6B68CFD2A5F0D4D00B02621 /* black-scholes */,
+				B6B68D112A66713900B02621 /* inputReader.cpp */,
+				B6B68D102A6641BB00B02621 /* README.md */,
+				B6B68D0D2A660E1A00B02621 /* main.cpp */,
+				B6B68CFE2A5F0D4D00B02621 /* blackscholes.cpp */,
+				B6B68D052A5F0DA100B02621 /* blackscholes.h */,
+				B6B68D072A5F11D800B02621 /* utilities.cpp */,
+				B6B68D082A5F11D800B02621 /* utilities.hpp */,
+				B6B68D062A5F0FF000B02621 /* xcode_redirect.hpp */,
 				B6B68CFC2A5F0D4D00B02621 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +69,6 @@
 				B6B68CFB2A5F0D4D00B02621 /* black-scholes */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B6B68CFD2A5F0D4D00B02621 /* black-scholes */ = {
-			isa = PBXGroup;
-			children = (
-				B6B68CFE2A5F0D4D00B02621 /* main.cpp */,
-			);
-			path = "black-scholes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B68CFF2A5F0D4D00B02621 /* main.cpp in Sources */,
+				B6B68D092A5F11D800B02621 /* utilities.cpp in Sources */,
+				B6B68D0F2A660E1A00B02621 /* main.cpp in Sources */,
+				B6B68CFF2A5F0D4D00B02621 /* blackscholes.cpp in Sources */,
+				B6B68D122A66713900B02621 /* inputReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
