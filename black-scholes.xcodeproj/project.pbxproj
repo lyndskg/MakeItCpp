@@ -34,6 +34,7 @@
 		B6B68D112A66713900B02621 /* inputReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputReader.cpp; sourceTree = "<group>"; };
 		B6B68D132A6671E800B02621 /* inputReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inputReader.h; sourceTree = "<group>"; };
 		B6B68D142A66917700B02621 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B6B68D152A66A60200B02621 /* Program.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				B6B68D132A6671E800B02621 /* inputReader.h */,
 				B6B68D102A6641BB00B02621 /* README.md */,
 				B6B68D0D2A660E1A00B02621 /* main.cpp */,
+				B6B68D152A66A60200B02621 /* Program.h */,
 				B6B68CFE2A5F0D4D00B02621 /* blackscholes.cpp */,
 				B6B68D052A5F0DA100B02621 /* blackscholes.h */,
 				B6B68D062A5F0FF000B02621 /* xcode_redirect.hpp */,

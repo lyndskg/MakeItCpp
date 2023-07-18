@@ -17,6 +17,8 @@ retrieve from external API or data feed
 bakctesting?
 
 
+CHECK ALL INCLUDES AND USING DIRECTIVES
+
 
 separate class function declarations into multiple cpp files for implementation
 
