@@ -8,17 +8,13 @@
 #ifndef Program_h
 #define Program_h
 
-#include <iostream>
-#include <stdio.h>
-#include <iostream>
-#include <algorithm>
-#include <iomanip>
-#include <getopt.h>
-
-
-#include "blackscholes.h"
+#include "blackScholes.h"
 #include "inputReader.h"
 
+
+// ----------------------------------------------------------------------------
+//                      "Program" Class Declarations
+// ----------------------------------------------------------------------------
 
 
 class Program {

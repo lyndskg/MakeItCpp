@@ -9,16 +9,21 @@
 #include <stdexcept> // For exception handling
 #include <limits> // For numeric_limits
 #include <curl/curl.h> // Example library for making HTTP requests
+
+#include "curl_easy.h"
+#include "curl_form.h"
+#include "curl_ios.h"
+#include "curl_exception.h"
 // Include necessary database libraries
 
-#include "blackscholes.h"
+#include "blackScholes.h"
 #include "inputReader.h"
 
 using namespace std;
 
 
 // ----------------------------------------------------------------------------
-//                             Helper Functions
+//                   "InputReader" Class Helper Functions
 // ----------------------------------------------------------------------------
 
 // Validates and retrieves a valid numerical input from the user.
@@ -154,13 +159,17 @@ size_t responseCallback(void* contents, size_t size, size_t nmemb, string* respo
 
 
 // ----------------------------------------------------------------------------
-//                     Class Member Function Implementations
+//            "InputReader" Class Member Function Implementations
 // ----------------------------------------------------------------------------
+
+// Default constructor.
+InputReader::InputReader() {}
+
 
 // Reads input values from the user interactively.
 //
 // Time complexity: O(1) per input prompt
-//          i.e. time complexity depends on the number of input prompts and the time it takes for the user the              provide valid input
+//          i.e. time complexity depends on the number of input prompts and the time it takes for the user to provide valid input
 // Space complexity: O(1)
 void InputReader::readInputFromUser(blackScholesModel& model) {
     try {

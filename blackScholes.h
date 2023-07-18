@@ -1,5 +1,5 @@
 //
-//  blackscholes.h
+//  blackScholes.h
 //  black-scholes
 //
 //  Created by lyndskg on 7/12/23.
@@ -13,10 +13,11 @@
 
 using namespace std;
 
+// ----------------------------------------------------------------------------
+//                  "blackScholesModel" Class Declarations
+// ----------------------------------------------------------------------------
 class blackScholesModel {
 public:
-    string inputMode; // Program mode (USER, FILE, DB, API)
-    
     // Default constructor.
     blackScholesModel();
   
@@ -25,15 +26,15 @@ public:
                       double riskFreeRate, double volatility, char optionType);
     
     
-    
-    // Processes the command line arguments.
-    //     Uses getopt_long to parse the options and their arguments.
-    //      Based on the specified mode, it calls the corresponding functions to read input values from different sources (e.g. user
-    //      input, a file, a database, or an API).
-    //
-    // Time complexity: O(n), where n = # of command line options
-    // Space complexity: O(1)
-    void get_options(int argc, char* argv[]);
+//
+//    // Processes the command line arguments.
+//    //     Uses getopt_long to parse the options and their arguments.
+//    //      Based on the specified mode, it calls the corresponding functions to read input values from different sources (e.g. user
+//    //      input, a file, a database, or an API).
+//    //
+//    // Time complexity: O(n), where n = # of command line options
+//    // Space complexity: O(1)
+//    void get_options(int argc, char* argv[]);
     
     
     // Prints a helpful message about how to use the program for the user when requested.
@@ -61,10 +62,10 @@ public:
     // Time complexity: O(1)
     // Space complexity: O(1)
     double normalCDF(double d);
-    
-    // Launches the algorithm.
-    void launchAlgo();
-    
+//    
+//    // Launches the algorithm.
+//    void launchAlgo();
+//    
   
     // ----------------------------------------------------------------------------
     //                            Setter Methods
@@ -180,4 +181,4 @@ private:
     
 }; // blackScholesModel
 
-#endif /* blackscholes_h */
+#endif /* blackScholes_h */

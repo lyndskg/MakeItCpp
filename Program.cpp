@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  Program.cpp
 //  black-scholes
 //
 //  Created by lyndskg on 7/17/23.
@@ -9,48 +9,20 @@
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
-#include <iomanip>
 #include <getopt.h>
 
 #include "Program.h"
-#include "blackscholes.h"
+#include "blackScholes.h"
 #include "inputReader.h"
-#include "xcode_redirect.hpp"
 
-
-
-// ----------------------------------------------------------------------------
-//                               Driver
-// ----------------------------------------------------------------------------
-int main(int argc, char* argv[]) {
-    // To speed up I/O
-    ios_base::sync_with_stdio(false);
-    xcode_redirect(argc, argv);
-    
-    cout << setprecision(20);  // Always show 20 decimal places
-    cout << fixed; // Disable scientific notation for large numbers
-    
-    // Create an instance of Program.
-    Program program;
-    
-    program.get_options(argc, argv);
-    
-    // Create an instance of blackScholesModel.
-    blackScholesModel model;
-    
-    program.launchAlgo(model);
-    
-    return 0;
-}
-
+using namespace std;
 
 // ----------------------------------------------------------------------------
-//                      Class Member Function Implementations
+//              "Program" Class Member Function Implementations
 // ----------------------------------------------------------------------------
-
 
 // Default constructor.
-Program::Program() {}
+Program::Program() : inputMode("") {}
 
 
 // Processes the command line arguments.
