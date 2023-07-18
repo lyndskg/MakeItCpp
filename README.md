@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  <#Title#>
 
 
@@ -20,3 +21,6 @@ bakctesting?
 separate class function declarations into multiple cpp files for implementation
 
 helper funtcions in class or nah
+=======
+# black_scholes_cpp
+>>>>>>> 8fe9accd366d76012a96ed900016a73873cce0bd
