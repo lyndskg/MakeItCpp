@@ -33,6 +33,7 @@
 		B6B68D102A6641BB00B02621 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6B68D112A66713900B02621 /* inputReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputReader.cpp; sourceTree = "<group>"; };
 		B6B68D132A6671E800B02621 /* inputReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inputReader.h; sourceTree = "<group>"; };
+		B6B68D142A66917700B02621 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		B6B68CF22A5F0D4D00B02621 = {
 			isa = PBXGroup;
 			children = (
+				B6B68D142A66917700B02621 /* .gitignore */,
 				B6B68D112A66713900B02621 /* inputReader.cpp */,
 				B6B68D132A6671E800B02621 /* inputReader.h */,
 				B6B68D102A6641BB00B02621 /* README.md */,
