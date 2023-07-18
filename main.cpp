@@ -14,6 +14,7 @@
 
 
 #include "blackscholes.h"
+#include "inputReader.h"
 #include "xcode_redirect.hpp"
 
 

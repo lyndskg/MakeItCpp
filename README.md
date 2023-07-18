@@ -18,3 +18,5 @@ bakctesting?
 
 
 separate class function declarations into multiple cpp files for implementation
+
+helper funtcions in class or nah

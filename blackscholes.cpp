@@ -18,13 +18,13 @@
 #include <numbers>
 
 #include "blackscholes.h"
-#include "xcode_redirect.hpp"
+#include "inputReader.h"
 
 using namespace std;
 
 
 // ----------------------------------------------------------------------------
-//                          Member Functions
+//                      Class Member Function Implementations
 // ----------------------------------------------------------------------------
 
 // Default constructor
@@ -69,15 +69,21 @@ void blackScholesModel::get_options(int argc, char* argv[]) {
                 
                 // Call the corresponding function based on the input mode.
                 if (inputMode == "USER") {
-                    blackScholesModel::readInputFromUser();
+                    // TODO: WTF??
+                    blackScholesModel model;
+                    InputReader inputReader;
+                    inputReader.readInputFromUser(model);
+                    
                 } else if (inputMode == "FILE") {
                     string filename = "input.txt"; // Example filename
                     blackScholesModel::readInputFromFile(filename);
+                    
                 } else if (inputMode == "DB") {
-                    blackScholesModel::readInputFromDatabase(); // Implement this function for database input
+                    blackScholesModel::readInputFromDB(); // Implement this function for database input
+                    
                 } else if (inputMode == "API") {
                     blackScholesModel::readInputFromAPI(); // Implement this function for API input
-                }
+                } // if-elif-elif-elif
 
                 break;
                 
@@ -106,47 +112,6 @@ void blackScholesModel::printHelp(char* argv[]) {
     // argv[0] is the name of the currently executing program.
     cout << "Usage: " << argv[0] << " [-m TODO1|TODO2]|-h" << endl;
     cout << "This program is to" << endl;
-}
-
-// Reads input parameters from a file (e.g., JSON or CSV).
-// TODO: FINISH IMPLEMENTATION
-void readInputFromFile(const string& filename) {
-    ifstream file(filename);
-    
-    if (file.is_open()) {
-        // Read input data from the file and populate the class members.
-        // You can use a JSON or CSV parsing library to simplify this process.
-        
-        // Example: Reading input from a CSV file
-        string line;
-        if (getline(file, line)) {
-            // Parse the line to extract input parameters
-            // and populate the class members accordingly.
-        }
-
-        file.close();
-    } else {
-        cerr << "Error opening file: " << filename << endl;
-        exit(1);
-    }
-}
-
-// Prompts the user to enter input parameters interactively.
-void readInputFromUser() {
-    // Prompt the user for input parameters and read them using std::cin.
-
-           std::cout << "Enter the underlying price: ";
-           std::cin >> underlyingPrice;
-
-           // Prompt and read other input parameters accordingly.
-}
-
-void readInputFromDB() {
-    
-}
-
-void readInputFromAPI() {
-    
 }
 
 // Defines the option pricing function and calculates the option price using the Black-Scholes formula.
