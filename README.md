@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 #  <#Title#>
 
+INCLUDE FUCKING LIBCURL INTO MAKEFILE 
 
 todo:
 
